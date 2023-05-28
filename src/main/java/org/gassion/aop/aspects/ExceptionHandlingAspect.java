@@ -9,8 +9,9 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Order(3)
 public class ExceptionHandlingAspect {
-    @Before("org.gassion.aop.aspects.MyPointcut.allGetMethods()")
-    public void beforeGetExceptionHandlingAdvice() {
+    @Before("org.gassion.aop.aspects.MyPointcut.allAddMethods()")
+    public void beforeAddExceptionHandlingAdvice() {
         System.out.println("beforeGetExceptionHandlingAdvice : error catching and handling");
+        System.out.println("------------------------------------------");
     }
 }
