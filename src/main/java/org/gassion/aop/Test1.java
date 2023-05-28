@@ -9,7 +9,8 @@ public class Test1 {
 
         UniLibrary library = context.getBean("uniLibrary", UniLibrary.class);
         library.getBook();
-        library.getMagazine();
+        library.returnMagazine();
+        library.addBook();
 
         context.close();
     }
